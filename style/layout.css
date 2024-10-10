@@ -1,0 +1,28 @@
+
+/*Deixando duas colunas*/
+#app{
+  display:grid;
+  grid-template-columns: 50% 50% ;
+
+  height: 100vh;
+  overflow:hidden;
+}
+
+main{
+  overflow: auto;
+  padding: 1.25rem; /*Calculo 20px/16px = 1.25rem*/
+
+  & .main-container{
+    max-width: 51.25rem;/*820/16 = 51.25rem*/
+    margin: auto;
+  }
+}
+
+aside{
+
+  padding: 1.25rem; /*Calculo 20px/16px = 1.25rem*/
+
+  &.aside-container{
+    max-width: 25rem; /*400 / 16 = 25rem*/
+  }
+}
